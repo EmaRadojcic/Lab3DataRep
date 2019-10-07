@@ -6,10 +6,20 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule,MatCardModule,MatButtonModule,MatToolbarModule,MatExpansionModule} from '@angular/material';
+import { CreateComponent } from './create/create.component';
+import { ReadComponent } from './read/read.component';
+import {FormsModule} from '@angular/forms';
+
+
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CreateComponent,
+    ReadComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +30,8 @@ import {MatInputModule,MatCardModule,MatButtonModule,MatToolbarModule,MatExpansi
     MatButtonModule,
     MatToolbarModule,
     MatExpansionModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
